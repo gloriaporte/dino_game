@@ -1,0 +1,54 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    background: url('dino.png');
+    position: absolute;
+    bottom: 0;
+}
+
+.cactos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background: url('cactus.png');
+}
+
+.background {
+    background: url('background.png');
+    position: absolute;
+    bottom: 10%;
+    background-repeat: repeat-x;
+    animation: deslizarCenario 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+
+.game-over {
+    text-align: center;
+    text-transform: uppercase;
+    max-resolution: 80px;
+}
+
+/* Animação com CSS
+Serve pra definir etapas de uma animação */
+@keyframes deslizarCenario {
+
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
